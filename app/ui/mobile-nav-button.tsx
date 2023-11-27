@@ -11,7 +11,7 @@ const MobileNavButton = ({
   toggleIsNavOpen,
 }: MobileNavButtonProps) => {
   return (
-    <button onClick={toggleIsNavOpen} className="text-main">
+    <button onClick={toggleIsNavOpen} className="text-accent-1">
       {isNavOpen ? <CloseIcon /> : <MenuIcon />}
     </button>
   );

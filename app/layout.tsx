@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./ui/header";
-
-const inter = Inter({ subsets: ["latin"] });
+import { mulish } from "./ui/fonts";
 
 export const metadata: Metadata = {
   title: "EverGreen",
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} text-sm`}>
+      <body className={`${mulish.className} text-sm text-Paragraph`}>
         <Header />
         {children}
       </body>

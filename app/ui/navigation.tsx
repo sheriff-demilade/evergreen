@@ -11,12 +11,16 @@ const Navigation = ({ isNavOpen, toggleIsNavOpen }: NavigationProps) => {
     <nav
       className={`${
         isNavOpen ? "" : "opacity-0 pointer-events-none invisible"
-      } duration-500 w-52 top-12 right-0 absolute p-6 rounded-bl-md bg-grey shadow-md`}
+      } duration-500 w-52 top-12 left-0 absolute p-6 rounded-br-md bg-accent-2 shadow-md`}
     >
       <ul className="flex flex-col gap-6 text-lg">
         {mainNavLinks.map(({ id, title, href }) => (
           <li key={id}>
-            <Link href={href} onClick={toggleIsNavOpen}>
+            <Link
+              href={href}
+              onClick={toggleIsNavOpen}
+              className=" hover:text-accent-1 active:text-accent-1"
+            >
               {title}
             </Link>
           </li>

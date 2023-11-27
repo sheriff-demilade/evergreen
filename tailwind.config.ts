@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        main: "#2FB95D",
-        grey: "#043A3A",
+        "accent-1": "#2FB95D",
+        "accent-2": "#043A3A",
+        "accent-shade": "#2aa754",
+        "accent-tint": "#1d4e4e",
+        Paragraph: "#525252",
       },
     },
   },

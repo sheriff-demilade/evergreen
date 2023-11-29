@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="fixed w-full bg-accent-2 text-white z-20 shadow-md">
-      <div className="relative h-12 container mx-auto px-3 flex gap-3 items-center">
+      <div className="h-12 container mx-auto px-3 flex gap-3 items-center">
         <MobileNavButton
           isNavOpen={isNavOpen}
           toggleIsNavOpen={toggleIsNavOpen}

@@ -5,7 +5,7 @@ import JoinedUsers from "../joined-users";
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-1 gap-9 pb-12">
+    <section className="grid grid-cols-1 gap-9 pb-10">
       <Image
         src="/hero-mobile.png"
         alt="Hero image"
@@ -13,7 +13,7 @@ const Hero = () => {
         height={500}
         className=""
       />
-      <div className="container mx-auto px-3">
+      <article className="container mx-auto px-3">
         <h1
           className={`${bricolageGrotesque.className} text-4xl font-extrabold text-accent-2 mb-4`}
         >
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
 
         <JoinedUsers />
-      </div>
+      </article>
     </section>
   );
 };

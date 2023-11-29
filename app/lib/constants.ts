@@ -38,3 +38,10 @@ export const joinedUsers = [
     height: 72,
   },
 ];
+
+export const ratings = [
+  { id: "rating_1", title: "Years Experience", rating: "13" },
+  { id: "rating_2", title: "Product", rating: "13k" },
+  { id: "rating_3", title: "Satisfied Clients", rating: "7k" },
+  { id: "rating_4", title: "Local Team Members", rating: "124" },
+];

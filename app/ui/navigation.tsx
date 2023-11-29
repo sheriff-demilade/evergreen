@@ -10,7 +10,9 @@ const Navigation = ({ isNavOpen, toggleIsNavOpen }: NavigationProps) => {
   return (
     <nav
       className={`${
-        isNavOpen ? "" : "opacity-0 pointer-events-none invisible"
+        isNavOpen
+          ? ""
+          : "opacity-0 -translate-x-full pointer-events-none invisible"
       } duration-500 w-52 top-12 left-0 absolute p-6 rounded-br-md bg-accent-2 shadow-md`}
     >
       <ul className="flex flex-col gap-6 text-lg">

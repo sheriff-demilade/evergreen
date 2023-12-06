@@ -21,8 +21,8 @@ const About = () => {
           className="w-full"
         />
         <ul className="py-4 px-2 grid grid-cols-4 text-center text-white bg-accent-2">
-          {ratings.map(({ id, title, rating }) => (
-            <Rating key={id} title={title} rating={rating} />
+          {ratings.map((rating) => (
+            <Rating key={rating.id} {...rating} />
           ))}
         </ul>
       </div>

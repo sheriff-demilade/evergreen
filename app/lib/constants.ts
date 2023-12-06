@@ -1,3 +1,10 @@
+import hours from "../../public/services-icons/24 Hour Service.png";
+import digging from "../../public/services-icons/Digging.png";
+import flower from "../../public/services-icons/Flower Growing.png";
+import sprinkler from "../../public/services-icons/Garden Sprinkler.png";
+import gardener from "../../public/services-icons/Gardener.png";
+import mower from "../../public/services-icons/lawn mower.png";
+
 export const mainNavLinks = [
   { id: "mainNavLink_1", title: "Home", href: "/" },
   { id: "mainNavLink_2", title: "About Us", href: "about" },
@@ -40,8 +47,60 @@ export const joinedUsers = [
 ];
 
 export const ratings = [
-  { id: "rating_1", title: "Years Experience", rating: "13" },
-  { id: "rating_2", title: "Product", rating: "13k" },
-  { id: "rating_3", title: "Satisfied Clients", rating: "7k" },
-  { id: "rating_4", title: "Local Team Members", rating: "124" },
+  { id: "rating_1", title: "Years Experience", rate: "13" },
+  { id: "rating_2", title: "Product", rate: "13k" },
+  { id: "rating_3", title: "Satisfied Clients", rate: "7k" },
+  { id: "rating_4", title: "Local Team Members", rate: "124" },
+];
+
+export const services = [
+  {
+    id: "service_1",
+    title: "Lawn Care",
+    description:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    icon: mower,
+    href: "#",
+  },
+  {
+    id: "service_2",
+    title: "Free Consultations",
+    description:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    icon: hours,
+    href: "#",
+  },
+  {
+    id: "service_3",
+    title: "Irrigation Systems",
+    description:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    icon: flower,
+    href: "#",
+  },
+  {
+    id: "service_4",
+    title: "Seasonal Maintenance",
+    description:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    icon: digging,
+    href: "#",
+  },
+
+  {
+    id: "service_5",
+    title: "Weater Features",
+    description:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    icon: sprinkler,
+    href: "#",
+  },
+  {
+    id: "service_6",
+    title: "Gardeners",
+    description:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    icon: gardener,
+    href: "#",
+  },
 ];

@@ -30,20 +30,26 @@ type ServiceCardProps = {
 
 const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
   return (
-    <div className="relative p-6 pl-12 ml-8 rounded-lg shadow-md">
+    <div className="relative py-5 pl-10 pr-3 ml-6 rounded-lg shadow-md hover:shadow-lg duration-300">
       <Image
         src={icon}
         width={48}
         height={48}
-        className=" absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 bg-accent-2 p-2 rounded-xl"
+        className=" absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 bg-accent-2 p-2 rounded-xl shadow-md"
         alt={title}
       />
       <h3
-        className={`${bricolageGrotesque.className} text-lg font-medium text-accent-2 mb-3`}
+        className={`${bricolageGrotesque.className} text-lg font-semibold text-accent-2 mb-3`}
       >
         {title}
       </h3>
       <p className="">{description}</p>
+      <a
+        href="#"
+        className="inline-block pt-3 text-accent-1 active:text-accent-shade duration-300"
+      >
+        Read More...
+      </a>
     </div>
   );
 };

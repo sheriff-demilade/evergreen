@@ -1,9 +1,10 @@
-import hours from "../../public/services-icons/24 Hour Service.png";
+import hours from "../../public/services-icons/24-Hour-Service.png";
 import digging from "../../public/services-icons/Digging.png";
-import flower from "../../public/services-icons/Flower Growing.png";
-import sprinkler from "../../public/services-icons/Garden Sprinkler.png";
+import flower from "../../public/services-icons/Flower-Growing.png";
+import sprinkler from "../../public/services-icons/Garden-Sprinkler.png";
 import gardener from "../../public/services-icons/Gardener.png";
-import mower from "../../public/services-icons/lawn mower.png";
+import mower from "../../public/services-icons/lawn-mower.png";
+import mark from "../../public/mark-icon.svg";
 
 export const mainNavLinks = [
   { id: "mainNavLink_1", title: "Home", href: "/" },
@@ -60,7 +61,7 @@ export const services = [
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
     icon: mower,
-    href: "#",
+    readMoreLink: "#",
   },
   {
     id: "service_2",
@@ -68,7 +69,7 @@ export const services = [
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
     icon: hours,
-    href: "#",
+    readMoreLink: "#",
   },
   {
     id: "service_3",
@@ -76,7 +77,7 @@ export const services = [
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
     icon: flower,
-    href: "#",
+    readMoreLink: "#",
   },
   {
     id: "service_4",
@@ -84,7 +85,7 @@ export const services = [
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
     icon: digging,
-    href: "#",
+    readMoreLink: "#",
   },
 
   {
@@ -93,7 +94,7 @@ export const services = [
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
     icon: sprinkler,
-    href: "#",
+    readMoreLink: "#",
   },
   {
     id: "service_6",
@@ -101,6 +102,33 @@ export const services = [
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
     icon: gardener,
-    href: "#",
+    readMoreLink: "#",
+  },
+];
+
+export const ReasonsToCooseUs = [
+  {
+    id: "reason_1",
+    title: "Sustainable Practices",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur.",
+    icon: mark,
+    readMoreLink: "#",
+  },
+  {
+    id: "reason_2",
+    title: "Licensed and Insured",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur.",
+    icon: mark,
+    readMoreLink: "#",
+  },
+  {
+    id: "reason_3",
+    title: "Local Knowledge",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur.",
+    icon: mark,
+    readMoreLink: "#",
   },
 ];

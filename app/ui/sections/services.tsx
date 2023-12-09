@@ -26,9 +26,15 @@ type ServiceCardProps = {
   icon: StaticImport;
   title: string;
   description: string;
+  readMoreLink: string;
 };
 
-const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
+const ServiceCard = ({
+  icon,
+  title,
+  description,
+  readMoreLink,
+}: ServiceCardProps) => {
   return (
     <div className="relative py-5 pl-10 pr-3 ml-6 rounded-lg shadow-md hover:shadow-lg duration-300">
       <Image
@@ -45,7 +51,7 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
       </h3>
       <p className="">{description}</p>
       <a
-        href="#"
+        href={readMoreLink}
         className="inline-block pt-3 text-accent-1 active:text-accent-shade duration-300"
       >
         Read More...

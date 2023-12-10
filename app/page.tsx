@@ -1,6 +1,7 @@
 import About from "./ui/sections/about";
 import ChooseUs from "./ui/sections/choose-us";
 import Hero from "./ui/sections/hero";
+import Pricing from "./ui/sections/pricing";
 import Services from "./ui/sections/services";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <About />
       <ChooseUs />
       <Services />
+      <Pricing />
     </main>
   );
 }

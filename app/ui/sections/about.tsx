@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Article from "../article";
-import { ratings } from "@/app/lib/constants";
+import { ratings } from "@/app/lib/data";
 import Rating from "../rating";
 
 const About = () => {

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Article from "../article";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { bricolageGrotesque } from "../fonts";
-import { ReasonsToCooseUs } from "@/app/lib/constants";
+import { ReasonsToCooseUs } from "@/app/lib/data";
 
 const ChooseUs = () => {
   return (

@@ -5,6 +5,7 @@ import sprinkler from "../../public/services-icons/Garden-Sprinkler.png";
 import gardener from "../../public/services-icons/Gardener.png";
 import mower from "../../public/services-icons/lawn-mower.png";
 import mark from "../../public/mark-icon.svg";
+import CheckCircleIcon from "../ui/icons/check-circle-icon";
 
 export const mainNavLinks = [
   { id: "mainNavLink_1", title: "Home", href: "/" },
@@ -130,5 +131,35 @@ export const ReasonsToCooseUs = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur.",
     icon: mark,
     readMoreLink: "#",
+  },
+];
+
+export const PricingPackages = [
+  {
+    id: "package_1",
+    packageName: "Package 1",
+    title: "Standard Plan",
+    price: 20.0,
+    features: [
+      { id: "feature_1", featureName: "Initial Consultation" },
+      { id: "feature_2", featureName: "Labor Costs" },
+      { id: "feature_3", featureName: "Materials and Plants" },
+      { id: "feature_4", featureName: "Equipment and Machinery" },
+    ],
+    purchaseLink: "#",
+  },
+  {
+    id: "package_2",
+    packageName: "Package 2",
+    title: "Premium Plan",
+    price: 90.0,
+    features: [
+      { id: "feature_1", featureName: "Initial Consultation" },
+      { id: "feature_2", featureName: "Labor Costs" },
+      { id: "feature_3", featureName: "Materials and Plants" },
+      { id: "feature_4", featureName: "Equipment and Machinery" },
+      { id: "feature_5", featureName: "Permits and Inspection Fees" },
+    ],
+    purchaseLink: "#",
   },
 ];

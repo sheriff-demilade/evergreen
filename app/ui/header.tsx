@@ -4,7 +4,7 @@ import Link from "next/link";
 import { bricolageGrotesque } from "./fonts";
 import { useState } from "react";
 import LinkButton from "./link-button";
-import { mainNavLinks } from "../lib/constants";
+import { mainNavLinks } from "../lib/data";
 import CloseIcon from "./icons/close-icon";
 import MenuIcon from "./icons/menu-icon";
 

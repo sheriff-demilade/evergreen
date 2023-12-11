@@ -20,14 +20,14 @@ const LinkButton = ({
     <Link
       href={href}
       className={clsx(
-        `inline-block px-7 leading-none font-semibold rounded-full shadow-md ${customStyles}`,
+        `inline-block px-7 text-center leading-none rounded-full shadow-md ${customStyles}`,
         {
-          "text-white bg-accent-1 hover:bg-accent-shade active:bg-accent-shade duration-300 py-3":
+          " font-semibold text-white bg-accent-1 hover:bg-accent-shade active:bg-accent-shade duration-300 py-3":
             variant === "accent-1",
-          "text-white bg-accent-2 hover:bg-accent-tint active:bg-accent-tint duration-300 py-3":
+          " font-semibold text-white bg-accent-2 hover:bg-accent-tint active:bg-accent-tint duration-300 py-3":
             variant === "accent-2",
-          "text-transparent bg-white duration-300 py-3": variant === "white",
-          "text-white bg-accent-1 hover:bg-accent-shade active:bg-accent-shade duration-300 py-2":
+          " font-extrabold bg-white duration-300 py-3": variant === "white",
+          " font-semibold text-white bg-accent-1 hover:bg-accent-shade active:bg-accent-shade duration-300 py-2":
             variant === "login",
         }
       )}

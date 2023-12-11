@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { joinedUsers } from "../lib/constants";
+import { joinedUsers } from "../lib/data";
 import { bricolageGrotesque } from "./fonts";
 
 const JoinedUsers = () => {

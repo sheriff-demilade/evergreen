@@ -13,9 +13,9 @@ const Pricing = () => {
         className="mb-10"
       />
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-12">
         {PricingPackages.map((pricingPackage) => (
-          <PricingCard key={pricingPackage.id} {...pricingPackage} />
+          <PackageCard key={pricingPackage.id} {...pricingPackage} />
         ))}
       </div>
     </section>
@@ -24,57 +24,68 @@ const Pricing = () => {
 
 type FeatrueType = {
   id: string;
-  featureName: string;
+  title: string;
 };
 
-type PricingCardProps = {
+type PackageCardProps = {
   packageName: string;
   title: string;
   price: number;
   features: FeatrueType[];
-  purchaseLink: string;
+  href: string;
+  primaryColor: string;
+  secondaryColor: string;
 };
 
-const PricingCard = ({
+const PackageCard = ({
   packageName,
   title,
   price,
   features,
-  purchaseLink,
-}: PricingCardProps) => {
+  href,
+  primaryColor,
+  secondaryColor,
+}: PackageCardProps) => {
   return (
-    <div className="bg-accent-2 text-white rounded-xl overflow-hidden">
-      <div className="p-6 border-b">
-        <p className="text-base font-semibold mb-3">{title}</p>
-        <p className="text-3xl font-bold mb-2">{price}</p>
-        <span className="text-xs">/Per month</span>
+    <div className="text-white">
+      <div
+        className={`bg-${secondaryColor} w-3/4 mx-auto py-2 font-semibold text-center bg-accent-1 rounded-t-2xl`}
+      >
+        {packageName}
       </div>
-      <div className="p-6">
-        <ul className="mb-6 space-y-3">
-          {features.map((feature) => (
-            <FeaturesItem key={feature.id} {...feature} />
-          ))}
-        </ul>
-        <LinkButton
-          href={purchaseLink}
-          variant="white"
-          customStyles="w-full text-accent-2"
-        >
-          Purchase
-        </LinkButton>
+      <div className={`bg-${primaryColor}  rounded-2xl overflow-hidden`}>
+        <div className="p-6 border-b">
+          <p className=" text-lg font-semibold mb-3">{title}</p>
+          <p className="text-3xl font-bold mb-2">{price}.00</p>
+          <span className="text-xs">/Per month</span>
+        </div>
+        <div className="p-6">
+          <ul className="mb-6 space-y-3">
+            {features.map(({ id, title }) => (
+              <FeaturesItem key={id} title={title} />
+            ))}
+          </ul>
+          <LinkButton
+            href={href}
+            variant="white"
+            customStyles="w-full text-accent-2"
+          >
+            Purchase
+          </LinkButton>
+        </div>
       </div>
     </div>
   );
 };
 
 type FeatureItemProps = {
-  featureName: string;
+  title: string;
 };
 
-const FeaturesItem = ({ featureName }: FeatureItemProps) => {
+const FeaturesItem = ({ title }: FeatureItemProps) => {
   return (
-    <li className="flex items-center gap-3 pb-2 border-b">
-      <CheckCircleIcon /> <span className="">{featureName}</span>
+    <li className="flex items-center gap-3 pb-3 border-b">
+      <CheckCircleIcon /> <span>{title}</span>
     </li>
   );
 };

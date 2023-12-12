@@ -6,13 +6,13 @@ const JoinedUsers = () => {
   return (
     <div className="flex items-center gap-4">
       <div className="flex -space-x-4">
-        {joinedUsers.map(({ id, src, width, height }) => (
+        {joinedUsers.map(({ id, src }) => (
           <Image
             key={id}
             src={src}
             alt={id}
-            width={width}
-            height={height}
+            width={72}
+            height={72}
             className="rounded-full w-10 h-10 border-2 border-white"
           />
         ))}

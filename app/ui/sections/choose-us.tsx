@@ -36,17 +36,17 @@ const ChooseUs = () => {
 
 type ReasonsToCooseUsCardProps = {
   id: string;
-  icon: StaticImport;
+  icon: string;
   title: string;
   description: string;
-  readMoreLink: string;
+  href: string;
 };
 
 const ReasonsToCooseUsCard = ({
   icon,
   title,
   description,
-  readMoreLink,
+  href,
 }: ReasonsToCooseUsCardProps) => {
   return (
     <div className="">
@@ -59,13 +59,13 @@ const ReasonsToCooseUsCard = ({
       />
       <div className="">
         <h3
-          className={`${bricolageGrotesque.className} text-lg font-semibold text-accent-2 mb-3`}
+          className={`${bricolageGrotesque.className} text-lg font-semibold text-accent-2 mb-2`}
         >
           {title}
         </h3>
         <p className="">{description}</p>
         <a
-          href={readMoreLink}
+          href={href}
           className="inline-block pt-3 text-accent-1 active:text-accent-shade duration-300"
         >
           Read More...

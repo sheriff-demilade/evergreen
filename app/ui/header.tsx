@@ -4,7 +4,7 @@ import Link from "next/link";
 import { bricolageGrotesque } from "./fonts";
 import { useState } from "react";
 import LinkButton from "./link-button";
-import { mainNavLinks } from "../lib/data";
+import { navLinks } from "../lib/data";
 import CloseIcon from "./icons/close-icon";
 import MenuIcon from "./icons/menu-icon";
 
@@ -54,14 +54,14 @@ const Navigation = ({ isNavOpen, toggleIsNavOpen }: NavigationProps) => {
       } duration-500 ease-in-out w-52 top-12 left-0 absolute p-6 pl-4 rounded-br-md bg-accent-2 shadow-md`}
     >
       <ul className="flex flex-col gap-6 text-lg">
-        {mainNavLinks.map(({ id, title, href }) => (
+        {navLinks.map(({ id, name, href }) => (
           <li key={id}>
             <Link
               href={href}
               onClick={toggleIsNavOpen}
               className=" hover:text-accent-1 active:text-accent-1"
             >
-              {title}
+              {name}
             </Link>
           </li>
         ))}

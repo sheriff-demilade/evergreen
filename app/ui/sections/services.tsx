@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Article from "../article";
 import { bricolageGrotesque } from "../fonts";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { services } from "@/app/lib/data";
 
 const Services = () => {
@@ -23,18 +22,13 @@ const Services = () => {
 
 type ServiceCardProps = {
   id: string;
-  icon: StaticImport;
+  icon: string;
   title: string;
   description: string;
-  readMoreLink: string;
+  href: string;
 };
 
-const ServiceCard = ({
-  icon,
-  title,
-  description,
-  readMoreLink,
-}: ServiceCardProps) => {
+const ServiceCard = ({ icon, title, description, href }: ServiceCardProps) => {
   return (
     <div className="relative py-5 pl-10 pr-3 ml-6 rounded-lg shadow-md hover:shadow-lg duration-300">
       <Image
@@ -51,7 +45,7 @@ const ServiceCard = ({
       </h3>
       <p className="">{description}</p>
       <a
-        href={readMoreLink}
+        href={href}
         className="inline-block pt-3 text-accent-1 active:text-accent-shade duration-300"
       >
         Read More...

@@ -1,50 +1,31 @@
-import hours from "../../public/services-icons/24-Hour-Service.png";
-import digging from "../../public/services-icons/Digging.png";
-import flower from "../../public/services-icons/Flower-Growing.png";
-import sprinkler from "../../public/services-icons/Garden-Sprinkler.png";
-import gardener from "../../public/services-icons/Gardener.png";
-import mower from "../../public/services-icons/lawn-mower.png";
-import mark from "../../public/mark-icon.svg";
-import CheckCircleIcon from "../ui/icons/check-circle-icon";
-
-export const mainNavLinks = [
-  { id: "mainNavLink_1", title: "Home", href: "/" },
-  { id: "mainNavLink_2", title: "About Us", href: "about" },
-  { id: "mainNavLink_3", title: "Our Service", href: "services" },
-  { id: "mainNavLink_4", title: "Blog", href: "blog" },
-  { id: "mainNavLink_5", title: "Pages", href: "pages" },
+export const navLinks = [
+  { id: "navLink_1", name: "Home", href: "/" },
+  { id: "navLink_2", name: "About Us", href: "/about" },
+  { id: "navLink_3", name: "Our Service", href: "/services" },
+  { id: "navLink_4", name: "Blog", href: "/blog" },
+  { id: "navLink_5", name: "Pages", href: "/pages" },
 ];
 
 export const joinedUsers = [
   {
     id: "joinedUser_1",
     src: "/customers/customer-1.png",
-    width: 72,
-    height: 72,
   },
   {
     id: "joinedUser_2",
     src: "/customers/customer-2.png",
-    width: 72,
-    height: 72,
   },
   {
     id: "joinedUser_3",
     src: "/customers/customer-3.png",
-    width: 72,
-    height: 72,
   },
   {
     id: "joinedUser_4",
     src: "/customers/customer-4.png",
-    width: 72,
-    height: 72,
   },
   {
     id: "joinedUser_5",
     src: "/customers/customer-5.png",
-    width: 72,
-    height: 72,
   },
 ];
 
@@ -61,32 +42,32 @@ export const services = [
     title: "Lawn Care",
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
-    icon: mower,
-    readMoreLink: "#",
+    icon: "/services-icons/lawn-mower.png",
+    href: "/",
   },
   {
     id: "service_2",
     title: "Free Consultations",
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
-    icon: hours,
-    readMoreLink: "#",
+    icon: "/services-icons/24-Hour-Service.png",
+    href: "/",
   },
   {
     id: "service_3",
     title: "Irrigation Systems",
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
-    icon: flower,
-    readMoreLink: "#",
+    icon: "/services-icons/Flower-Growing.png",
+    href: "/",
   },
   {
     id: "service_4",
     title: "Seasonal Maintenance",
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
-    icon: digging,
-    readMoreLink: "#",
+    icon: "/services-icons/Digging.png",
+    href: "/",
   },
 
   {
@@ -94,16 +75,16 @@ export const services = [
     title: "Weater Features",
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
-    icon: sprinkler,
-    readMoreLink: "#",
+    icon: "/services-icons/Garden-Sprinkler.png",
+    href: "/",
   },
   {
     id: "service_6",
     title: "Gardeners",
     description:
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
-    icon: gardener,
-    readMoreLink: "#",
+    icon: "/services-icons/Gardener.png",
+    href: "/",
   },
 ];
 
@@ -113,24 +94,24 @@ export const ReasonsToCooseUs = [
     title: "Sustainable Practices",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur.",
-    icon: mark,
-    readMoreLink: "#",
+    icon: "/mark-icon.svg",
+    href: "/",
   },
   {
     id: "reason_2",
     title: "Licensed and Insured",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur.",
-    icon: mark,
-    readMoreLink: "#",
+    icon: "/mark-icon.svg",
+    href: "/",
   },
   {
     id: "reason_3",
     title: "Local Knowledge",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur.",
-    icon: mark,
-    readMoreLink: "#",
+    icon: "/mark-icon.svg",
+    href: "/",
   },
 ];
 
@@ -139,27 +120,61 @@ export const PricingPackages = [
     id: "package_1",
     packageName: "Package 1",
     title: "Standard Plan",
-    price: 20.0,
+    price: 20,
     features: [
-      { id: "feature_1", featureName: "Initial Consultation" },
-      { id: "feature_2", featureName: "Labor Costs" },
-      { id: "feature_3", featureName: "Materials and Plants" },
-      { id: "feature_4", featureName: "Equipment and Machinery" },
+      { id: "feature_1", title: "Initial Consultation" },
+      { id: "feature_2", title: "Labor Costs" },
+      { id: "feature_3", title: "Materials and Plants" },
+      { id: "feature_4", title: "Equipment and Machinery" },
     ],
-    purchaseLink: "#",
+    href: "/",
+    primaryColor: "accent-2",
+    secondaryColor: "accent-1",
   },
   {
     id: "package_2",
     packageName: "Package 2",
     title: "Premium Plan",
-    price: 90.0,
+    price: 90,
     features: [
-      { id: "feature_1", featureName: "Initial Consultation" },
-      { id: "feature_2", featureName: "Labor Costs" },
-      { id: "feature_3", featureName: "Materials and Plants" },
-      { id: "feature_4", featureName: "Equipment and Machinery" },
-      { id: "feature_5", featureName: "Permits and Inspection Fees" },
+      { id: "feature_1", title: "Initial Consultation" },
+      { id: "feature_2", title: "Labor Costs" },
+      { id: "feature_3", title: "Materials and Plants" },
+      { id: "feature_4", title: "Equipment and Machinery" },
+      { id: "feature_5", title: "Permits and Inspection Fees" },
     ],
-    purchaseLink: "#",
+    href: "/",
+    primaryColor: "accent-1",
+    secondaryColor: "accent-2",
+  },
+];
+
+export const gallery = [
+  { id: "gallery_item_1", img: "/gallery-img-1.png" },
+  {
+    id: "gallery_item_2",
+    img: "",
+    title: "Water Features",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. ",
+    href: "/",
+  },
+  { id: "gallery_item_3", img: "/gallery-img-2.png" },
+  {
+    id: "gallery_item_4",
+    img: "",
+    title: "Lawn Care",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. ",
+    href: "/",
+  },
+  { id: "gallery_item_5", img: "/gallery-img-3.png" },
+  {
+    id: "gallery_item_6",
+    img: "",
+    title: "Irrigation Systems",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. ",
+    href: "/",
   },
 ];

@@ -229,3 +229,50 @@ export const testimonials = [
       "Phasellus fermentum orci non nunc fermentum mattis. In eleifend vehicula justo, sed pulvinar erat scelerisque vel. Vestibulum eu erat elit. Etiam mattis feugiat finibus.",
   },
 ];
+
+export const faqs = [
+  {
+    id: "faq_1",
+    icon: "/faq-icon.svg",
+    question: "What factors influence the cost of a landscaping project?",
+    answer:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.",
+  },
+  {
+    id: "faq_2",
+    icon: "/faq-icon.svg",
+    question:
+      "What sets your landscaping service apart from others in the area?",
+    answer:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.",
+  },
+  {
+    id: "faq_3",
+    icon: "/faq-icon.svg",
+    question: "How often should I schedule landscape maintenance services?",
+    answer:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.",
+  },
+  {
+    id: "faq_4",
+    icon: "/faq-icon.svg",
+    question:
+      "Do you provide sustainable and eco friendly landscaping options?",
+    answer:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.",
+  },
+  {
+    id: "faq_5",
+    icon: "/faq-icon.svg",
+    question: "What landscaping services do you offer?",
+    answer:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.",
+  },
+  {
+    id: "faq_1",
+    icon: "/faq-icon.svg",
+    question: "Can you assist with obtaining permits for landscaping projects?",
+    answer:
+      "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.",
+  },
+];

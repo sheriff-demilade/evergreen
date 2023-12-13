@@ -32,9 +32,9 @@ const FaqCard = ({ icon, question, answer }: FaqCardProps) => {
         className="mt-1"
       />
       <div className="pl-3">
-        <h4 className="text-base font-semibold text-accent-2 mb-3">
+        <h3 className="text-lg leading-6 font-semibold text-accent-2  mb-3">
           {question}
-        </h4>
+        </h3>
         <p className="">{answer}</p>
       </div>
     </div>

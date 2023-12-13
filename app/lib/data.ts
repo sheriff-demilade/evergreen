@@ -276,3 +276,33 @@ export const faqs = [
       "Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.",
   },
 ];
+
+export const articles = [
+  {
+    id: "article_1",
+    image: "/articles/image-1.png",
+    date: "10 October 2024",
+    title: "Creating a Pollinator Friendly Garden",
+    description:
+      "Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    href: "/",
+  },
+  {
+    id: "article_2",
+    image: "/articles/image-2.png",
+    date: "18 October 2024",
+    title: "Tips for Cost-Effective Projects",
+    description:
+      "Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    href: "/",
+  },
+  {
+    id: "article_3",
+    image: "/articles/image-1.png",
+    date: "29 October 2024",
+    title: "Landscaping for Increased Home Value",
+    description:
+      "Vivamus accumsan diam eget ultricies auctor. Proin iaculis metus vel condimentum tincidunt.",
+    href: "/",
+  },
+];

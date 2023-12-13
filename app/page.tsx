@@ -1,4 +1,5 @@
 import About from "./ui/sections/about";
+import Articles from "./ui/sections/articles";
 import ChooseUs from "./ui/sections/choose-us";
 import Faqs from "./ui/sections/faqs";
 import Gallery from "./ui/sections/gallery";
@@ -18,6 +19,7 @@ export default function Home() {
       <Gallery />
       <Testimonials />
       <Faqs />
+      <Articles />
     </main>
   );
 }

@@ -10,7 +10,7 @@ const Faqs = () => {
         span="Questions"
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis vivamus hendrerit."
       />
-      <div className="mt-10 grid grid-cols-1 gap-y-8">
+      <div className="mt-10 grid grid-cols-1 gap-y-9">
         {faqs.map((faq) => (
           <FaqCard key={faq.id} {...faq} />
         ))}
@@ -23,7 +23,7 @@ type FaqCardProps = { icon: string; question: string; answer: string };
 
 const FaqCard = ({ icon, question, answer }: FaqCardProps) => {
   return (
-    <div className="flex items-start py-5 px-3 rounded-xl shadow-md hover:shadow-lg duration-300">
+    <div className="flex items-start py-6 px-3 rounded-xl shadow-md hover:shadow-lg duration-300">
       <Image
         src={icon}
         width={36}

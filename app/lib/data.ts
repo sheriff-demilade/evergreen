@@ -178,3 +178,54 @@ export const gallery = [
     href: "/",
   },
 ];
+
+export const testimonials = [
+  {
+    id: "testimonial_1",
+    image: "/testimonials/image-1.png",
+    name: "Charlie Leuschke",
+    stars: 5,
+    qoute:
+      "Phasellus fermentum orci non nunc fermentum mattis. In eleifend vehicula justo, sed pulvinar erat scelerisque vel. Vestibulum eu erat elit. Etiam mattis feugiat finibus.",
+  },
+  {
+    id: "testimonial_2",
+    image: "/testimonials/image-2.png",
+    name: "Luke Glover",
+    stars: 5,
+    qoute:
+      "Phasellus fermentum orci non nunc fermentum mattis. In eleifend vehicula justo, sed pulvinar erat scelerisque vel. Vestibulum eu erat elit. Etiam mattis feugiat finibus.",
+  },
+  {
+    id: "testimonial_3",
+    image: "/testimonials/image-3.png",
+    name: "Roderick Schumm",
+    stars: 5,
+    qoute:
+      "Phasellus fermentum orci non nunc fermentum mattis. In eleifend vehicula justo, sed pulvinar erat scelerisque vel. Vestibulum eu erat elit. Etiam mattis feugiat finibus.",
+  },
+  {
+    id: "testimonial_4",
+    image: "/testimonials/image-4.png",
+    name: "Brandi Boyle",
+    stars: 5,
+    qoute:
+      "Phasellus fermentum orci non nunc fermentum mattis. In eleifend vehicula justo, sed pulvinar erat scelerisque vel. Vestibulum eu erat elit. Etiam mattis feugiat finibus.",
+  },
+  {
+    id: "testimonial_5",
+    image: "/testimonials/image-5.png",
+    name: "Scott Runolfsdottir",
+    stars: 5,
+    qoute:
+      "Phasellus fermentum orci non nunc fermentum mattis. In eleifend vehicula justo, sed pulvinar erat scelerisque vel. Vestibulum eu erat elit. Etiam mattis feugiat finibus.",
+  },
+  {
+    id: "testimonial_6",
+    image: "/testimonials/image-6.png",
+    name: "Claire Witting",
+    stars: 5,
+    qoute:
+      "Phasellus fermentum orci non nunc fermentum mattis. In eleifend vehicula justo, sed pulvinar erat scelerisque vel. Vestibulum eu erat elit. Etiam mattis feugiat finibus.",
+  },
+];

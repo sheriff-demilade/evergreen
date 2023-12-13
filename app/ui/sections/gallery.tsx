@@ -12,7 +12,7 @@ const Gallery = () => {
         span="Gallery"
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis vivamus hendrerit."
       />
-      <div className="flex flex-col gap-10 mt-10">
+      <div className="mt-10 grid grid-cols-1 gap-y-10 ">
         {gallery.map((galleryItem) => (
           <GalleryCard key={galleryItem.id} {...galleryItem} />
         ))}

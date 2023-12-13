@@ -4,6 +4,7 @@ import Gallery from "./ui/sections/gallery";
 import Hero from "./ui/sections/hero";
 import Pricing from "./ui/sections/pricing";
 import Services from "./ui/sections/services";
+import Testimonials from "./ui/sections/testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Pricing />
       <Gallery />
+      <Testimonials />
     </main>
   );
 }

@@ -13,7 +13,7 @@ const Pricing = () => {
         className="mb-10"
       />
 
-      <div className="flex flex-col gap-12">
+      <div className="grid grid-cols-1 gap-y-12">
         {PricingPackages.map((pricingPackage) => (
           <PackageCard key={pricingPackage.id} {...pricingPackage} />
         ))}
@@ -68,7 +68,7 @@ const PackageCard = ({
           <LinkButton
             href={href}
             variant="white"
-            customStyles="w-full text-accent-2"
+            customStyles={`text-${primaryColor} w-full`}
           >
             Purchase
           </LinkButton>

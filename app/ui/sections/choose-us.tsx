@@ -21,7 +21,7 @@ const ChooseUs = () => {
           paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis eleifend quam, non efficitur nisi mattis quis. Vivamus scelerisque orci nec erat cursus, sed facilisis velit porttitor. Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget auctor."
           className="mt-8 mb-11"
         />
-        <div className="flex flex-col gap-11">
+        <div className="grid grid-cols-1 gap-y-11">
           {ReasonsToCooseUs.map((reasonsToCooseUs) => (
             <ReasonsToCooseUsCard
               key={reasonsToCooseUs.id}

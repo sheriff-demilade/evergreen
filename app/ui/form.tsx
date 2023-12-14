@@ -49,7 +49,7 @@ const TextArea = ({ id, label, rows }: TextAreaProps) => {
         id={id}
         rows={rows}
         placeholder={label}
-        className="peer block w-full focus:outline-none placeholder-transparen"
+        className="peer block w-full focus:outline-none placeholder-transparent"
       ></textarea>
       <label
         htmlFor={id}

@@ -3,7 +3,6 @@ export const navLinks = [
   { id: "navLink_2", name: "About Us", href: "/about" },
   { id: "navLink_3", name: "Our Service", href: "/services" },
   { id: "navLink_4", name: "Blog", href: "/blog" },
-  { id: "navLink_5", name: "Pages", href: "/pages" },
 ];
 
 export const joinedUsers = [

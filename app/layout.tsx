@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./ui/header";
 import { mulish } from "./ui/fonts";
+import Footer from "./ui/footer";
 
 export const metadata: Metadata = {
   title: "EverGreen",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body className={`${mulish.className} text-sm text-Paragraph`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

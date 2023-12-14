@@ -306,3 +306,10 @@ export const articles = [
     href: "/",
   },
 ];
+
+export const formInputs = [
+  { id: "formInput_1", label: "Full name", type: "text" },
+  { id: "formInput_1", label: "Email", type: "email" },
+  { id: "formInput_1", label: "Telephone", type: "tel" },
+  { id: "formInput_1", label: "Service", type: "text" },
+];

@@ -1,6 +1,7 @@
 import About from "./ui/sections/about";
 import Articles from "./ui/sections/articles";
 import ChooseUs from "./ui/sections/choose-us";
+import Cta from "./ui/sections/cta";
 import Faqs from "./ui/sections/faqs";
 import Gallery from "./ui/sections/gallery";
 import Hero from "./ui/sections/hero";
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <Faqs />
       <Articles />
+      <Cta />
     </main>
   );
 }

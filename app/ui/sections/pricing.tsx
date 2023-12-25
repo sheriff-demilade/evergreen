@@ -1,7 +1,7 @@
 import { PricingPackages } from "@/app/lib/data";
 import Article from "../article";
-import CheckCircleIcon from "../icons/check-circle-icon";
 import LinkButton from "../link-button";
+import Image from "next/image";
 
 const Pricing = () => {
   return (
@@ -25,6 +25,7 @@ const Pricing = () => {
 type FeatrueType = {
   id: string;
   title: string;
+  icon: string;
 };
 
 type PackageCardProps = {
@@ -61,8 +62,8 @@ const PackageCard = ({
         </div>
         <div className="p-6">
           <ul className="mb-6 space-y-3">
-            {features.map(({ id, title }) => (
-              <FeaturesItem key={id} title={title} />
+            {features.map((feature) => (
+              <FeaturesItem key={feature.id} {...feature} />
             ))}
           </ul>
           <LinkButton
@@ -80,12 +81,14 @@ const PackageCard = ({
 
 type FeatureItemProps = {
   title: string;
+  icon: string;
 };
 
-const FeaturesItem = ({ title }: FeatureItemProps) => {
+const FeaturesItem = ({ title, icon }: FeatureItemProps) => {
   return (
     <li className="flex items-center gap-3 pb-3 border-b">
-      <CheckCircleIcon /> <span>{title}</span>
+      <Image src={icon} width={20} height={20} alt={title} />{" "}
+      <span>{title}</span>
     </li>
   );
 };

@@ -61,8 +61,8 @@ const Footer = () => {
             <li className="flex items-center gap-3">
               <Image
                 src="/location.png"
-                width={20}
-                height={19}
+                width={24}
+                height={20}
                 alt="location"
               />
               <address className="not-italic">
@@ -91,9 +91,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email "
-              className="h-14 p-4 "
+              className="h-14 p-4"
             />
-            <button className="h-14 p-4 bg-accent-1 font-bold">
+            <button className="h-14 p-4 bg-accent-1 font-bold w-full">
               Subscribe
             </button>
           </form>

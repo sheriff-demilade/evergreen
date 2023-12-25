@@ -1,5 +1,5 @@
 import { formInputs } from "../lib/data";
-import LinkButton from "./link-button";
+import Button from "./button";
 
 const Form = () => {
   return (
@@ -8,9 +8,7 @@ const Form = () => {
         <FormInput key={formInput.id} {...formInput} />
       ))}
       <TextArea id="message" label="Message" rows={3} />
-      <LinkButton href="/" variant="accent-1">
-        Get Strated
-      </LinkButton>
+      <Button>Get Strated</Button>
     </form>
   );
 };

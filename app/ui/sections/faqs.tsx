@@ -26,8 +26,8 @@ const FaqCard = ({ icon, question, answer }: FaqCardProps) => {
     <div className="flex items-start py-6 px-3 rounded-xl shadow-md hover:shadow-lg duration-300">
       <Image
         src={icon}
-        width={36}
-        height={36}
+        width={32}
+        height={32}
         alt="Queation mark icon"
         className="mt-1"
       />

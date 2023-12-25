@@ -91,9 +91,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter your email "
-              className="h-14 p-4"
+              className="h-14 p-4 grow"
             />
-            <button className="h-14 p-4 bg-accent-1 font-bold w-full">
+            <button className="h-14 p-4 bg-accent-1 font-bold shrink-0">
               Subscribe
             </button>
           </form>

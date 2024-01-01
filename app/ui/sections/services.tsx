@@ -5,13 +5,14 @@ import { services } from "@/app/lib/data";
 
 const Services = () => {
   return (
-    <section className="container mx-auto px-3 py-10">
+    <section className="container mx-auto px-3 sm:px-6 xl:px-8 py-10 lg:py-14 xl:py-16">
       <Article
         heading="Our"
         span="Services"
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis vivamus hendrerit."
+        className="md:text-center md:max-w-lg md:mx-auto"
       />
-      <div className=" mt-10 grid grid-cols-1 gap-y-8">
+      <div className=" mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-2 sm:gap-8 gap-y-8 md:gap-y-11 xl:gap-x-10">
         {services.map((service) => (
           <ServiceCard key={service.id} {...service} />
         ))}

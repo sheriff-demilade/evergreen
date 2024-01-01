@@ -9,9 +9,9 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className=" bg-accent-2 text-white py-10">
-      <div className=" container mx-auto px-3 flex flex-col-reverse gap-10">
-        <div className="">
+    <footer className=" bg-accent-2 text-white py-12">
+      <div className=" container mx-auto px-3 sm:px-6 xl:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-9 sm:gap-x-8 xl:gap-x-10 gap-y-10">
+        <div className="row-start-4 sm:row-start-2 lg:row-start-1 lg:col-span-2">
           <Link
             href="/"
             className={`${bricolageGrotesque.className} text-xl font-semibold inline-block mb-5`}
@@ -30,13 +30,13 @@ const Footer = () => {
             <YoutubeIcon />
           </div>
         </div>
-        <div className="">
+        <div className="lg:col-span-2 lg:justify-self-center">
           <h3
-            className={`${bricolageGrotesque.className} text-lg font-semibold mb-4`}
+            className={`${bricolageGrotesque.className} text-lg font-semibold mb-4 lg:mb-6`}
           >
             Quick Links
           </h3>
-          <ul className=" space-y-3">
+          <ul className=" space-y-3 lg:space-y-4">
             {navLinks.map(({ id, name, href }) => (
               <li key={id}>
                 <Link href={href}>{name}</Link>
@@ -44,13 +44,13 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <div className="">
+        <div className="lg:col-span-2">
           <h3
-            className={`${bricolageGrotesque.className} text-lg font-semibold mb-4`}
+            className={`${bricolageGrotesque.className} text-lg font-semibold mb-4 lg:mb-6`}
           >
             Contact Us
           </h3>
-          <ul className="space-y-3">
+          <ul className="space-y-3 lg:space-y-4">
             <li className="flex items-center gap-3">
               <Image src="/message.png" width={17} height={16} alt="message" />
               <a href="mailto:hello@website.com" className="">
@@ -77,21 +77,21 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="">
+        <div className="row-start-1 sm:row-start-2 sm:col-start-2 lg:row-start-1 lg:col-start-7 lg:col-span-3">
           <h3
-            className={`${bricolageGrotesque.className} text-lg font-semibold mb-5`}
+            className={`${bricolageGrotesque.className} text-lg font-semibold mb-5 lg:mb-6`}
           >
             Newsletter
           </h3>
 
           <form
             action=""
-            className="flex items-center rounded-2xl overflow-hidden shadow-lg"
+            className="h-14 w-full flex items-center rounded-2xl overflow-hidden shadow-lg"
           >
             <input
               type="email"
               placeholder="Enter your email "
-              className="h-14 p-4 grow"
+              className="w-full h-14 px-3"
             />
             <button className="h-14 p-4 bg-accent-1 font-bold shrink-0">
               Subscribe

@@ -3,7 +3,7 @@ import Form from "../form";
 
 const Cta = () => {
   return (
-    <section className="container mx-auto px-3 py-10 grid grid-cols-1 gap-y-6">
+    <section className="container mx-auto px-3 sm:px-6 xl:px-8 pt-10  lg:pt-14 xl:pt-16 pb-16 xl:pb-20 grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-x-8 xl:gap-x-12">
       <Article
         heading="Fill the Form to"
         span="get a free consultation"

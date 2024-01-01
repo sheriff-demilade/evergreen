@@ -3,12 +3,14 @@ import Button from "./button";
 
 const Form = () => {
   return (
-    <form className=" grid grid-cols-1 gap-y-8 px-4 py-6 shadow-xl rounded-xl">
-      {formInputs.map((formInput) => (
-        <FormInput key={formInput.id} {...formInput} />
-      ))}
+    <form className="w-full sm:w-96 lg:w-full mx-auto space-y-8 lg:space-y-10 px-4 lg:px-6 pt-10 pb-6 lg:pt-10 shadow-lg hover:shadow-xl hover:-translate-y-4 duration-500 rounded-xl">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-8 lg:gap-y-10">
+        {formInputs.map((formInput) => (
+          <FormInput key={formInput.id} {...formInput} />
+        ))}
+      </div>
       <TextArea id="message" label="Message" rows={3} />
-      <Button>Get Strated</Button>
+      <Button className="w-full">Get Strated</Button>
     </form>
   );
 };

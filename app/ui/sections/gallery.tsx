@@ -6,13 +6,14 @@ import { bricolageGrotesque } from "../fonts";
 
 const Gallery = () => {
   return (
-    <section className=" container mx-auto px-3 py-10">
+    <section className=" container mx-auto px-3 sm:px-6 xl:px-8 py-10 lg:py-12 xl:py-16">
       <Article
         heading="EverGreen"
         span="Gallery"
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis vivamus hendrerit."
+        className="md:text-center md:max-w-lg md:mx-auto"
       />
-      <div className="mt-10 grid grid-cols-1 gap-y-10 ">
+      <div className="mt-10 lg:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-7 gap-y-10 xl:gap-y-10 xl:gap-x-8">
         {gallery.map((galleryItem) => (
           <GalleryCard key={galleryItem.id} {...galleryItem} />
         ))}

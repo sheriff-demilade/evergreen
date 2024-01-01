@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="fixed w-full bg-accent-2 text-white z-20 shadow-md">
-      <div className="h-12 container mx-auto px-3 flex gap-3 items-center">
+      <div className="h-12 lg:h-14 container mx-auto px-3 flex gap-3 lg:justify-between items-center">
         <MobileNavButton
           isNavOpen={isNavOpen}
           toggleIsNavOpen={toggleIsNavOpen}
@@ -23,14 +23,14 @@ const Header = () => {
 
         <Link
           href="/"
-          className={`${bricolageGrotesque.className} text-xl font-semibold`}
+          className={`${bricolageGrotesque.className} text-xl lg:text-2xl lg:font-bold font-semibold`}
         >
           Ever<span className="text-accent-1">Green</span>
         </Link>
 
         <Navigation isNavOpen={isNavOpen} toggleIsNavOpen={toggleIsNavOpen} />
 
-        <LinkButton href="/" variant="login" customStyles="ml-auto">
+        <LinkButton href="/" variant="login" customStyles=" max-lg:ml-auto">
           Login
         </LinkButton>
       </div>
@@ -51,9 +51,9 @@ const Navigation = ({ isNavOpen, toggleIsNavOpen }: NavigationProps) => {
         isNavOpen
           ? ""
           : "opacity-0 -translate-x-full pointer-events-none invisible"
-      } duration-500 ease-in-out w-52 top-12 left-0 absolute p-6 pl-4 rounded-br-md bg-accent-2 shadow-md`}
+      } lg:opacity-100 lg:translate-x-0 lg:pointer-events-auto lg:visible duration-500 ease-in-out w-52 lg:w-auto top-12 lg:top-auto left-0 lg:left-auto absolute lg:relative p-6 lg:p-0 pl-4 rounded-br-md bg-accent-2 shadow-md lg:shadow-none`}
     >
-      <ul className="flex flex-col gap-6 text-lg">
+      <ul className="flex flex-col lg:flex-row gap-6 lg:gap-8 text-lg lg:text-base">
         {navLinks.map(({ id, name, href }) => (
           <li key={id}>
             <Link
@@ -81,7 +81,7 @@ const MobileNavButton = ({
   toggleIsNavOpen,
 }: MobileNavButtonProps) => {
   return (
-    <button onClick={toggleIsNavOpen} className="text-accent-1">
+    <button onClick={toggleIsNavOpen} className="text-accent-1 lg:hidden">
       {isNavOpen ? <CloseIcon /> : <MenuIcon />}
     </button>
   );

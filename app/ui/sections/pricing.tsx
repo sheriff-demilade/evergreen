@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const Pricing = () => {
   return (
-    <section className="container mx-auto px-3 py-10">
+    <section className="container mx-auto px-3 sm:px-6 xl:px-8 py-10 lg:py-14 xl:py-16 ">
       <Article
         heading="Pricing"
         span="Table"
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut volutpat tincidunt eget at felisioj,"
-        className="mb-10"
+        className="md:text-center md:max-w-lg md:mx-auto mb-10 lg:mb-12"
       />
 
-      <div className="grid grid-cols-1 gap-y-12">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-12 lg:gap-14">
         {PricingPackages.map((pricingPackage) => (
           <PackageCard key={pricingPackage.id} {...pricingPackage} />
         ))}
@@ -48,7 +48,7 @@ const PackageCard = ({
   secondaryColor,
 }: PackageCardProps) => {
   return (
-    <div className="text-white">
+    <div className="text-white max-w-xs flex-grow">
       <div
         className={`bg-${secondaryColor} w-3/4 mx-auto py-2 font-semibold text-center bg-accent-1 rounded-t-2xl`}
       >

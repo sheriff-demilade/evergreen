@@ -4,13 +4,14 @@ import { testimonials } from "@/app/lib/data";
 
 const Testimonials = () => {
   return (
-    <section className="container mx-auto px-3 py-10">
+    <section className="container mx-auto px-3 sm:px-6 xl:px-8 py-10 lg:py-14 xl:py-16">
       <Article
         heading="Listen to what our"
         span="customers say"
         paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis vivamus hendrerit."
+        className="md:text-center md:max-w-lg md:mx-auto"
       />
-      <div className="mt-10 grid grid-cols-1 gap-y-9">
+      <div className="mt-10 lg:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 gap-y-9 xl:gap-x-10 xl:gap-y-12">
         {testimonials.map((testimonial) => (
           <TestimonialCard key={testimonial.id} {...testimonial} />
         ))}

@@ -1,13 +1,14 @@
 type ButtonProps = {
   children: React.ReactNode;
   type?: "button";
+  className?: string;
 };
 
-const Button = ({ children, type = "button" }: ButtonProps) => {
+const Button = ({ children, type = "button", className }: ButtonProps) => {
   return (
     <button
       type={type}
-      className="inline-block px-7 py-3 text-center leading-none rounded-full shadow-md font-semibold text-white bg-accent-1 hover:bg-accent-shade active:bg-accent-shade duration-300"
+      className={`${className} inline-block px-7 py-3 text-center leading-none rounded-full shadow-md font-semibold text-white bg-accent-1 hover:bg-accent-shade active:bg-accent-shade duration-300`}
     >
       {children}
     </button>

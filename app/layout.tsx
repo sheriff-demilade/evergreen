@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${mulish.className} text-sm text-Paragraph`}>
+      <body
+        className={`${mulish.className} text-sm xl:text-base text-Paragraph`}
+      >
         <Header />
         {children}
         <Footer />

@@ -5,7 +5,10 @@ import Rating from "../rating";
 
 const About = () => {
   return (
-    <section className="container mx-auto px-3 sm:px-6 xl:px-8 py-10 lg:py-14 xl:py-16">
+    <section
+      id="about"
+      className="container mx-auto px-3 sm:px-6 xl:px-8 py-10 lg:py-14 xl:py-16"
+    >
       <Article
         heading="Landscape Design "
         span="Beyond Expectations"

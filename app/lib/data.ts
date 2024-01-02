@@ -1,8 +1,8 @@
 export const navLinks = [
   { id: "navLink_1", name: "Home", href: "/" },
-  { id: "navLink_2", name: "About Us", href: "/about" },
-  { id: "navLink_3", name: "Our Service", href: "/services" },
-  { id: "navLink_4", name: "Blog", href: "/blog" },
+  { id: "navLink_2", name: "About Us", href: "#about" },
+  { id: "navLink_3", name: "Our Service", href: "#services" },
+  { id: "navLink_4", name: "Blog", href: "#blog" },
 ];
 
 export const joinedUsers = [
